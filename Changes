@@ -1,0 +1,128 @@
+
+RCS file: /home/cvs/perl/Net-IP-RangeCompare/MANIFEST,v
+Working file: MANIFEST
+head: 1.1
+branch:
+locks: strict
+access list:
+symbolic names:
+keyword substitution: kv
+total revisions: 1;	selected revisions: 1
+description:
+----------------------------
+revision 1.1
+date: 2010-10-17 19:51:30 -0400;  author: wicket;  state: Exp;  commitid: C1ZJoGlHO1DS0RSu;
+rolliing in re-named files
+=============================================================================
+
+RCS file: /home/cvs/perl/Net-IP-RangeCompare/META.yml,v
+Working file: META.yml
+head: 1.1
+branch:
+locks: strict
+access list:
+symbolic names:
+keyword substitution: kv
+total revisions: 1;	selected revisions: 1
+description:
+----------------------------
+revision 1.1
+date: 2010-10-17 19:51:30 -0400;  author: wicket;  state: Exp;  commitid: C1ZJoGlHO1DS0RSu;
+rolliing in re-named files
+=============================================================================
+
+RCS file: /home/cvs/perl/Net-IP-RangeCompare/Makefile,v
+Working file: Makefile
+head: 1.1
+branch:
+locks: strict
+access list:
+symbolic names:
+keyword substitution: kv
+total revisions: 1;	selected revisions: 1
+description:
+----------------------------
+revision 1.1
+date: 2010-10-17 19:51:30 -0400;  author: wicket;  state: Exp;  commitid: C1ZJoGlHO1DS0RSu;
+rolliing in re-named files
+=============================================================================
+
+RCS file: /home/cvs/perl/Net-IP-RangeCompare/Makefile.PL,v
+Working file: Makefile.PL
+head: 1.1
+branch:
+locks: strict
+access list:
+symbolic names:
+keyword substitution: kv
+total revisions: 1;	selected revisions: 1
+description:
+----------------------------
+revision 1.1
+date: 2010-10-17 19:51:30 -0400;  author: wicket;  state: Exp;  commitid: C1ZJoGlHO1DS0RSu;
+rolliing in re-named files
+=============================================================================
+
+RCS file: /home/cvs/perl/Net-IP-RangeCompare/README,v
+Working file: README
+head: 1.1
+branch:
+locks: strict
+access list:
+symbolic names:
+keyword substitution: kv
+total revisions: 1;	selected revisions: 1
+description:
+----------------------------
+revision 1.1
+date: 2010-10-17 19:51:30 -0400;  author: wicket;  state: Exp;  commitid: C1ZJoGlHO1DS0RSu;
+rolliing in re-named files
+=============================================================================
+
+RCS file: /home/cvs/perl/Net-IP-RangeCompare/lib/Net/IP/RangeCompare.pm,v
+Working file: lib/Net/IP/RangeCompare.pm
+head: 1.1
+branch:
+locks: strict
+access list:
+symbolic names:
+keyword substitution: kv
+total revisions: 1;	selected revisions: 1
+description:
+----------------------------
+revision 1.1
+date: 2010-10-17 19:51:30 -0400;  author: wicket;  state: Exp;  commitid: C1ZJoGlHO1DS0RSu;
+rolliing in re-named files
+=============================================================================
+
+RCS file: /home/cvs/perl/Net-IP-RangeCompare/t/Net-IPRangeCompare.t,v
+Working file: t/Net-IPRangeCompare.t
+head: 1.1
+branch:
+locks: strict
+access list:
+symbolic names:
+keyword substitution: kv
+total revisions: 1;	selected revisions: 1
+description:
+----------------------------
+revision 1.1
+date: 2010-10-17 19:51:30 -0400;  author: wicket;  state: Exp;  commitid: C1ZJoGlHO1DS0RSu;
+rolliing in re-named files
+=============================================================================
+
+RCS file: /home/cvs/perl/Net-IP-RangeCompare/t/TestCore.t,v
+Working file: t/TestCore.t
+head: 1.1
+branch:
+locks: strict
+access list:
+symbolic names:
+keyword substitution: kv
+total revisions: 1;	selected revisions: 1
+description:
+----------------------------
+revision 1.1
+date: 2010-10-17 19:51:30 -0400;  author: wicket;  state: Exp;  commitid: C1ZJoGlHO1DS0RSu;
+rolliing in re-named files
+=============================================================================
