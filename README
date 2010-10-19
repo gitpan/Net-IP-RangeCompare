@@ -20,6 +20,11 @@ To install this module type the following:
    make test
    make install
 
+DEPENDENCIES
+
+     Data::Range::Compare >=     1.022
+     Data::IPV4::Range::Parse >= .03
+
 COPYRIGHT AND LICENCE
 
 Copyright (C) 2010 by Michael Shipper

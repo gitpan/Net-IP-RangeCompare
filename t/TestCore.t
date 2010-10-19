@@ -11,28 +11,28 @@ our $package_name='Net::IP::RangeCompare';
 
 ## helper functions ( everything depends on these )
 {
-  
-  ok(int_to_ip(1) eq '0.0.0.1','int_to_ip check');
 
-  ok(ip_to_int('0.0.0.1')==1,'ip_to_int check');
+	ok(int_to_ip(1) eq '0.0.0.1','int_to_ip check');
+
+	ok(ip_to_int('0.0.0.1')==1,'ip_to_int check');
 
 
-  ok(hostmask(0xff000000)==0x00ffffff,'host mask /8 check');
-  ok(hostmask(0xffffffff)==0x00000000,'host mask /32 check');
-  ok(hostmask(0)==0xffffffff,'host mask /0 check');
+	ok(hostmask(0xff000000)==0x00ffffff,'host mask /8 check');
+	ok(hostmask(0xffffffff)==0x00000000,'host mask /32 check');
+	ok(hostmask(0)==0xffffffff,'host mask /0 check');
 
-  ok('255.0.0.0' eq int_to_ip(cidr_to_int(8))
-    ,'cidr_to_int test /8 conversion');
-  ok('255.255.255.255' eq int_to_ip(cidr_to_int(32))
-    ,'cidr_to_int test /32 conversion');
-  ok('0.0.0.0' eq int_to_ip(cidr_to_int(0))
-    ,'cidr_to_int test /0 conversion');
+	ok('255.0.0.0' eq int_to_ip(cidr_to_int(8))
+			,'cidr_to_int test /8 conversion');
+	ok('255.255.255.255' eq int_to_ip(cidr_to_int(32))
+			,'cidr_to_int test /32 conversion');
+	ok('0.0.0.0' eq int_to_ip(cidr_to_int(0))
+			,'cidr_to_int test /0 conversion');
 }
 
 # Constructor tests ( all oo stuff depends on this )
 {
-  # normal constructor use
-  my $obj=$package_name->new(0,0);
+# normal constructor use
+	my $obj=$package_name->new(0,0);
   ok(defined($obj),"Numbers should work in the constructor call");
 
   ## These tests should fail the constructor
@@ -410,7 +410,10 @@ our $package_name='Net::IP::RangeCompare';
         ,[4,5]
     ]
   ];
-  my $range_copy=dclone($ranges);
+  #my $range_copy=dclone($ranges);
+  my $range_copy=[];
+  foreach (@$ranges) { push @$range_copy,[@$_] }
+
   my $obj;
   {
     my $ranges=[];
