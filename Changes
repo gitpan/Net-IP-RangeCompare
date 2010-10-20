@@ -113,14 +113,18 @@ rolliing in re-named files
 
 RCS file: /home/cvs/perl/Net-IP-RangeCompare/README,v
 Working file: README
-head: 1.2
+head: 1.3
 branch:
 locks: strict
 access list:
 symbolic names:
 keyword substitution: kv
-total revisions: 2;	selected revisions: 2
+total revisions: 3;	selected revisions: 3
 description:
+----------------------------
+revision 1.3
+date: 2010-10-19 15:59:25 -0400;  author: wicket;  state: Exp;  lines: +2 -2;  commitid: dGYIG5evm4ehF5Tu;
+rolling readme changes  in
 ----------------------------
 revision 1.2
 date: 2010-10-19 10:46:45 -0400;  author: wicket;  state: Exp;  lines: +5 -0;  commitid: HAmAIeSc4QC0W3Tu;
@@ -133,14 +137,18 @@ rolliing in re-named files
 
 RCS file: /home/cvs/perl/Net-IP-RangeCompare/lib/Net/IP/RangeCompare.pm,v
 Working file: lib/Net/IP/RangeCompare.pm
-head: 1.3
+head: 1.4
 branch:
 locks: strict
 access list:
 symbolic names:
 keyword substitution: kv
-total revisions: 3;	selected revisions: 3
+total revisions: 4;	selected revisions: 4
 description:
+----------------------------
+revision 1.4
+date: 2010-10-20 12:49:54 -0400;  author: wicket;  state: Exp;  lines: +1 -1;  commitid: PfMdz6oFftygAcTu;
+rolling in minor pod fixup
 ----------------------------
 revision 1.3
 date: 2010-10-19 15:57:09 -0400;  author: wicket;  state: Exp;  lines: +142 -1670;  commitid: Q6i0mujQInKuE5Tu;
@@ -157,14 +165,22 @@ rolliing in re-named files
 
 RCS file: /home/cvs/perl/Net-IP-RangeCompare/lib/Net/IP/RangeCompare.pod,v
 Working file: lib/Net/IP/RangeCompare.pod
-head: 1.1
+head: 1.3
 branch:
 locks: strict
 access list:
 symbolic names:
 keyword substitution: kv
-total revisions: 1;	selected revisions: 1
+total revisions: 3;	selected revisions: 3
 description:
+----------------------------
+revision 1.3
+date: 2010-10-20 13:07:41 -0400;  author: wicket;  state: Exp;  lines: +16 -16;  commitid: oG3LadJig3JmGcTu;
+more pod changes
+----------------------------
+revision 1.2
+date: 2010-10-20 12:49:54 -0400;  author: wicket;  state: Exp;  lines: +15 -5;  commitid: PfMdz6oFftygAcTu;
+rolling in minor pod fixup
 ----------------------------
 revision 1.1
 date: 2010-10-19 15:57:09 -0400;  author: wicket;  state: Exp;  commitid: Q6i0mujQInKuE5Tu;

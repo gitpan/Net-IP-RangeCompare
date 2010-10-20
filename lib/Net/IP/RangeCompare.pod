@@ -99,14 +99,6 @@ Although similar in functionality to Net::CIDR::Compare, Net::Netmask and NetAdd
 
 If you have a large number of ipv4 ranges and need to inventory lists of ranges for intersections, this is the Module for you!
 
-=head1 DEPENDENCIES
-
-As of version 4.02 L<Net::IP::RangeCompare> Depends on the following modules:
-
-L<Data::Range::Compare> - Framework for calculating range intersections 
-
-L<Data::IPV4::Range::Parse> - Perl extension parsing ipv4 ranges
-
 =head2 Export list
 
 Net::IP::RangeCompare does not export anything by default.  The functions listed in this section can be imported by using the standard import syntax.
@@ -188,16 +180,19 @@ Creates a new Net::IP::RangeCompare object.
   $obj=Net::IP::RangeCompare->parse_new_range('10');
   $obj=Net::IP::RangeCompare->parse_new_range('10.0.0.0 - 10.0.0.0');
   $obj=Net::IP::RangeCompare->parse_new_range('10/32');
-  $obj=Net::IP::RangeCompare->parse_new_range('10/255.255.255');
+  $obj=Net::IP::RangeCompare->parse_new_range('10/255.255.255.255');
   $obj=Net::IP::RangeCompare->parse_new_range('10.0.0.0','10.0.0.0');
 
   All of the above will parse the same range: 
     10.0.0.0 - 10.0.0.0
+
   Notes:
     When using a list syntax: start and end range are
     assumed.  Using 2 arguments will not work as 
     expected when the list consists of ip and cidr.
+
   Example:
+
     $obj=Net::IP::RangeCompare->parse_new_range('10.0.0.0',32);
     Returns: 10.0.0.0 - 32.0.0.0
 
@@ -205,22 +200,28 @@ Creates a new Net::IP::RangeCompare object.
       '10.0.0.0'
       ,'255.255.255.255
     );
-    Returns: 10.0.0.0 - 32.0.0.0
+    Returns: 10.0.0.0 - 255.255.255.255
 
-    If you wish to create an object from cidr boundaries
-    pass the argument as a single string.
+  If you wish to create an object from cidr boundaries
+  pass the argument as a single string.
+
   Example:
+
     $obj=Net::IP::RangeCompare->parse_new_range(
-      '10.0.0.0'.'/'.32
+      '10.0.0.0/32
     );
     Returns: 10.0.0.0 - 10.0.0.0
+
+  
+  If you wish to create an object from an ip/mask
+  pass the argument as a single string.
+
   Example: 
+
     $obj=Net::IP::RangeCompare->parse_new_range(
-      '10.0.0.0'
-      .'/'
-      .'255.255.255.255
+      '10.0.0.0/255.255.255'
     );
-    Returns: 10.0.0.0 - 10.0.0.0
+    Returns: 10.0.0.0 - 10.0.0.255
 
 =item * my $obj=Net::IP::RangeCompare->new(0,1);
 
@@ -1028,6 +1029,16 @@ Returns the list of keys in this instance.
 
 =cut
 
+=head1 DEPENDENCIES
+
+As of version 4.02 and up L<Net::IP::RangeCompare> Depends on the following modules:
+
+  Intersection computations are handled by:
+    L<Data::Range::Compare> 
+
+  IPV4 computations are handled by:
+    L<Data::IPV4::Range::Parse>
+
 =back
 
 =head1 AUTHOR
@@ -1043,8 +1054,7 @@ modify it under the same terms as Perl itself.
 
 =head1 SEE ALSO
 
-Net::Netmask NetAddr::IP Carp Net::CIDR::Compare Data::IPV4::Range::Parse Data::Range::Compare
+Carp Data::IPV4::Range::Parse Data::Range::Compare
 
 =cut
-
 
