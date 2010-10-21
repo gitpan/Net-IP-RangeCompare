@@ -212,7 +212,7 @@ Creates a new Net::IP::RangeCompare object.
     );
     Returns: 10.0.0.0 - 10.0.0.0
 
-  
+
   If you wish to create an object from an ip/mask
   pass the argument as a single string.
 
@@ -1029,17 +1029,19 @@ Returns the list of keys in this instance.
 
 =cut
 
+=back
+
 =head1 DEPENDENCIES
 
-As of version 4.02 and up L<Net::IP::RangeCompare> Depends on the following modules:
+Intersection computations are handled by: L<Data::Range::Compare> 
 
-  Intersection computations are handled by:
-    L<Data::Range::Compare> 
+IPV4 computations are handled by: L<Data::IPV4::Range::Parse>
 
-  IPV4 computations are handled by:
-    L<Data::IPV4::Range::Parse>
+=head1 Source Forge Project
 
-=back
+If you find this software useful and wish to donate please see the project website.
+
+L<Net IP Range Compare|https://sourceforge.net/projects/netiprangecompa/>
 
 =head1 AUTHOR
 

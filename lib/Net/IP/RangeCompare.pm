@@ -14,7 +14,7 @@ use constant key_end_ip =>key_end;
 
 %HELPER=HELPER_CB;
 
-$VERSION=4.022;
+$VERSION=4.024;
 use overload
   '""' => \&notation
   ,'fallback' => 1;
