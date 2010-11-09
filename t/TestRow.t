@@ -5,7 +5,6 @@ use Test::More tests =>59;
 use Data::Dumper;
 use lib qw(../lib);
 use Net::IP::RangeCompare qw(:ALL);
-use Storable qw(dclone);
 our $p='Net::IP::RangeCompare';
 
 ## Simple tests;

@@ -6,7 +6,6 @@ use lib qw(../lib);
 use Test::More tests =>145;
 use Data::Dumper;
 use Net::IP::RangeCompare qw(:ALL);
-use Storable qw(dclone);
 our $package_name='Net::IP::RangeCompare';
 
 ## helper functions ( everything depends on these )
@@ -410,7 +409,6 @@ our $package_name='Net::IP::RangeCompare';
         ,[4,5]
     ]
   ];
-  #my $range_copy=dclone($ranges);
   my $range_copy=[];
   foreach (@$ranges) { push @$range_copy,[@$_] }
 

@@ -6,7 +6,6 @@ use lib qw(../lib);
 use Test::More tests =>1;
 use Data::Dumper;
 use Net::IP::RangeCompare qw(:ALL);
-use Storable qw(dclone);
 our $p='Net::IP::RangeCompare';
 
 # next cidr tests

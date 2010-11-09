@@ -6,15 +6,50 @@ use warnings;
 use Carp qw(croak);
 use Scalar::Util qw(looks_like_number blessed);
 use vars qw($error $VERSION @ISA @EXPORT_OK %EXPORT_TAGS %HELPER);
-use Data::Range::Compare qw(HELPER_CB :HELPER :KEYS :SORT);
-use Data::IPV4::Range::Parse qw(:ALL);
+use Data::Range::Compare qw(HELPER_CB 
+         key_helper
+         key_start
+         key_end
+         key_generated
+         key_missing
+         key_data
+         add_one
+         sub_one
+         cmp_values
+         sort_largest_range_end_first
+         sort_largest_range_start_first
+         sort_smallest_range_start_first
+         sort_smallest_range_end_first
+         sort_in_consolidate_order
+         sort_in_presentation_order
+);
+use Data::IPV4::Range::Parse qw(
+
+        ALL_BITS
+        MAX_CIDR
+        MIN_CIDR
+        int_to_ip
+        ip_to_int
+        sort_quad
+        sort_notations
+        broadcast_int
+        base_int
+        size_from_mask
+        hostmask
+        cidr_to_int
+        parse_ipv4_cidr
+        parse_ipv4_range
+        parse_ipv4_ip
+        auto_parse_ipv4_range
+
+);
 
 use constant key_start_ip =>key_start;
 use constant key_end_ip =>key_end;
 
 %HELPER=HELPER_CB;
 
-$VERSION=4.024;
+$VERSION=4.025;
 use overload
   '""' => \&notation
   ,'fallback' => 1;

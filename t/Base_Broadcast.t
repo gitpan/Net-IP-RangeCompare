@@ -6,7 +6,6 @@ use lib qw(../lib lib);
 use Test::More tests =>16;
 use Data::Dumper;
 use Net::IP::RangeCompare qw(:ALL);
-use Storable qw(dclone);
 my $p='Net::IP::RangeCompare';
 
 my $obj=Net::IP::RangeCompare->parse_new_range('0.0.0.0 - 0.0.0.6');
